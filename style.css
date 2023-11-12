@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #ECE3CE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sec{
+    width: 80%;
+    height: 80%;
+    /* background-color: #EBE3D5; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+#sec-head{
+    padding: 0 20%;
+    width: 100%;
+    height: 100px;
+    background-color: #4F6F52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#head-elem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#head-elem h3{
+    font-weight: 600;
+    color: white;
+}
+.box{
+    padding: 10px;
+    background-color: #ECE3CE;
+    font-size: 1vw;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+#sec-body{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color:#f9ffe3;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.bubble{
+    width: 3vw;
+    height: 3vw;
+    background-color: #739072;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: #3A4D39;
+}
+
+.btn{
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5vw;
+    display: none;
+
+}
+.btn1{
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5vw;
+}
+.wrapper:hover .btn {
+    display: block;
+  }
+  
+.wrapper:hover .btn1 {
+    display: none;
+  }
+
+@media only screen and (max-width: 600px){
+    
+    #head-elem{
+        font-size: 3.5vw;
+        gap: 2px;
+        padding: 3px 6px;
+    }
+    .box{
+        padding: 5px 10px;
+        font-size: 3vw;
+    }
+    #sec-head{
+        padding: 10px 10px;
+        height: 80px;
+    }
+    #sec-body{
+        height: calc(100% - 80px);
+        gap:8px;
+        padding: 4px 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bubble{
+        width: 8vw;
+        height: 8vw;
+        font-size: 3.5vw;
+    }
+    .btn1{
+        font-size: 7vw;
+    }
+    .btn{
+        font-size: 7vw;
+        
+    }
+    /* .wrapper:hover .btn {
+        display: block;
+      }
+      
+    .wrapper:hover .btn1 {
+        display: none;
+      } */
+    
+}
